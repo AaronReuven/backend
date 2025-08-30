@@ -1,7 +1,6 @@
 const fetch = require('node-fetch')
 require('dotenv').config();
 const VAPI_API_KEY = process.env.VAPI_API_KEY
-const VAPI_ACCOUNT = process.env.VAPI_ACCOUNT
 const EVALUATOR_PHONE = process.env.EVALUATOR_PHONE
 
 exports.placeCall = async ({ to }) => {
