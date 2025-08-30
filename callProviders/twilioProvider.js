@@ -7,6 +7,7 @@ const EVALUATOR_PHONE = process.env.EVALUATOR_PHONE
 const twilio = require('twilio')
 
 exports.placeCall = async ({ to }) => {
+  console.log(process.env.TWILIO_ACCOUNT_SID)
   if (!TWILIO_ACCOUNT_SID) throw new Error('TWILIO_ACCOUNT_SID not set')
   const client = twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 
